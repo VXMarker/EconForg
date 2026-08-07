@@ -12,14 +12,13 @@
   text-decoration: none;
 
   list-style: none;
+
+  user-select: none;
 }
 
 body {
   font-family: var(--main-font);
-
   background: var(--main-page-color);
-
   color: var(--main-letter-color);
-
   min-width: 100vw;
 }

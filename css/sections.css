@@ -1,71 +1,177 @@
-/* FEATURES */
+/* ================= */
+/* PROGRAMAS */
+/* ================= */
 
-.features-grid {
-  display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: 30px;
+.programs {
+  padding: 90px 8%;
 }
 
-.feature-card {
-  padding: 40px;
+/* HEADER */
 
-  background: #eee;
-}
-
-/* WHY */
-
-.why-container {
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 20px;
-}
-
-.why-container div {
-  padding: 25px;
-
-  background: #eee;
-}
-
-/* REVIEWS */
-
-.review-container {
+.programs-header {
   display: flex;
 
-  gap: 30px;
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 50px;
 }
 
-.review-card {
-  padding: 30px;
-
-  background: #eee;
-
-  flex: 1;
+.programs-header h2 {
+  font-size: 45px;
 }
 
-/* FAQ */
+.programs-header button {
+  padding: 12px 30px;
 
-.faq-list div {
-  padding: 20px;
-
-  border-bottom: 1px solid #ddd;
-}
-
-/* CTA */
-
-.cta {
-  text-align: center;
-
-  background: #eee;
-}
-
-.cta button {
-  padding: 15px 30px;
+  border-radius: 25px;
 
   border: none;
 
+  background: white;
+
+  color: #111;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+/* CONTENEDOR GENERAL */
+
+.programs-container {
+  display: grid;
+
+  grid-template-columns: 45% 55%;
+
+  gap: 50px;
+}
+
+/* ================= */
+/* PARTE IZQUIERDA */
+/* ================= */
+
+.program-main img {
+  width: 100%;
+
+  height: 350px;
+
+  object-fit: cover;
+
   border-radius: 20px;
+}
+
+.program-main small {
+  display: block;
+
+  margin-top: 15px;
+
+  color: #aaa;
+}
+
+.program-main h3 {
+  margin-top: 25px;
+
+  font-size: 28px;
+
+  color: white;
+}
+
+.program-main p {
+  margin-top: 15px;
+
+  line-height: 1.7;
+
+  font-size: 17px;
+}
+
+/* ================= */
+/* LISTADO DERECHO */
+/* ================= */
+
+.program-list {
+  height: 550px;
+
+  overflow-y: auto;
+
+  padding-right: 15px;
+}
+
+/* Scroll personalizado */
+
+.program-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.program-list::-webkit-scrollbar-thumb {
+  background: #555;
+
+  border-radius: 20px;
+}
+
+/* CARD */
+
+.program-card {
+  display: flex;
+
+  gap: 20px;
+
+  padding: 15px;
+
+  margin-bottom: 20px;
+
+  background: #1d1d1d;
+
+  border-radius: 18px;
+}
+
+.program-card img {
+  width: 110px;
+
+  height: 110px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+}
+
+.program-info {
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* ESTADO */
+
+.program-info span {
+  width: max-content;
+
+  padding: 5px 15px;
+
+  border-radius: 20px;
+
+  background: #123d21;
+
+  color: #4ade80;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+.program-info h4 {
+  margin-top: 12px;
+
+  font-size: 20px;
+
+  color: white;
+}
+
+.program-info p {
+  margin-top: 8px;
+
+  line-height: 1.5;
+
+  color: #bbb;
 }
