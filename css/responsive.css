@@ -1,0 +1,162 @@
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 900px) {
+  /* ================= */
+  /* NAVBAR */
+  /* ================= */
+
+  .main-navbar {
+    height: auto;
+
+    padding: 20px 8%;
+
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .nav-links {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .nav-links li {
+    width: 100%;
+
+    text-align: center;
+
+    background: #ffffff08;
+
+    border-radius: 12px;
+
+    transition:
+      transform 0.25s ease,
+      background-color 0.25s ease;
+  }
+
+  .nav-links a {
+    width: 100%;
+
+    padding: 15px;
+
+    display: block;
+  }
+
+  /* CLICK MOVIL */
+
+  .nav-links li:active {
+    background: white;
+
+    transform: translateY(-4px);
+  }
+
+  .nav-links li:active a {
+    color: #111;
+  }
+
+  .nav-button {
+    width: 100%;
+  }
+
+  .nav-button button {
+    width: 100%;
+  }
+
+  /* ================= */
+  /* HERO */
+  /* ================= */
+
+  .hero {
+    height: 600px;
+  }
+
+  .hero-content {
+    padding: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(32px, 6vw, 38px);
+  }
+
+  .hero-content p {
+    font-size: 17px;
+  }
+
+  .hero-content button {
+    width: 100%;
+  }
+
+  /* ================= */
+  /* SOBRE NOSOTROS */
+  /* ================= */
+
+  .about-container {
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  .about-content,
+  .about-slider {
+    width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 35px;
+  }
+
+  .about-slider {
+    height: 300px;
+  }
+
+  /* ================= */
+  /* EQUIPO */
+  /* ================= */
+
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+
+  .person-image {
+    height: 380px;
+  }
+
+  /* ================= */
+  /* FEATURES */
+  /* ================= */
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ================= */
+  /* WHY US */
+  /* ================= */
+
+  .why-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* ================= */
+  /* REVIEWS */
+  /* ================= */
+
+  .review-container {
+    flex-direction: column;
+  }
+
+  /* ================= */
+  /* FOOTER */
+  /* ================= */
+
+  .footer {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+}

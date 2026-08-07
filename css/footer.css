@@ -1,0 +1,13 @@
+/* FOOTER */
+
+.footer {
+  background: #111;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  padding: 50px 8%;
+}

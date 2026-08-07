@@ -1,0 +1,71 @@
+/* FEATURES */
+
+.features-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+.feature-card {
+  padding: 40px;
+
+  background: #eee;
+}
+
+/* WHY */
+
+.why-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.why-container div {
+  padding: 25px;
+
+  background: #eee;
+}
+
+/* REVIEWS */
+
+.review-container {
+  display: flex;
+
+  gap: 30px;
+}
+
+.review-card {
+  padding: 30px;
+
+  background: #eee;
+
+  flex: 1;
+}
+
+/* FAQ */
+
+.faq-list div {
+  padding: 20px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+/* CTA */
+
+.cta {
+  text-align: center;
+
+  background: #eee;
+}
+
+.cta button {
+  padding: 15px 30px;
+
+  border: none;
+
+  border-radius: 20px;
+}

@@ -1,0 +1,195 @@
+/* ================= */
+/* EQUIPO */
+/* ================= */
+
+.team {
+  margin-top: 100px;
+
+  padding: 0 8%;
+}
+
+.team h2 {
+  text-align: center;
+
+  font-size: 40px;
+
+  margin-bottom: 50px;
+}
+
+/* CONTENEDOR DE CARDS */
+
+.team-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 45px;
+
+  align-items: center;
+}
+
+/* CARD */
+
+.person-card {
+  width: 100%;
+}
+
+/* IMAGEN */
+
+.person-image {
+  position: relative;
+
+  height: 520px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+}
+
+.person-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+/* OSCURECIMIENTO */
+
+.person-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  background: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.9));
+}
+
+/* CONTENIDO */
+
+.person-info {
+  width: 100%;
+
+  padding: 35px;
+
+  color: white;
+}
+
+/*
+    SOLO TEXTO SE MUEVE
+*/
+
+.person-text {
+  transform: translateY(80px);
+
+  transition: 0.5s ease;
+}
+
+/* TITULO */
+
+.person-info h3 {
+  display: inline-block;
+
+  font-size: 30px;
+
+  font-family: Georgia, serif;
+
+  margin-bottom: 20px;
+
+  position: relative;
+}
+
+/* LINEA ANIMADA */
+
+.person-info h3::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -8px;
+
+  left: 0;
+
+  height: 2px;
+
+  width: 0;
+
+  background: white;
+
+  transition: 0.5s ease;
+}
+
+/* DESCRIPCION */
+
+.person-description {
+  max-height: 0;
+
+  opacity: 0;
+
+  overflow: hidden;
+
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.person-description p {
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  margin-bottom: 10px;
+}
+
+/* BOTON FIJO */
+
+.person-info button {
+  margin-top: 20px;
+
+  padding: 12px 30px;
+
+  border-radius: 30px;
+
+  border: 1px solid white;
+
+  background: transparent;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* ================= */
+/* HOVER */
+/* ================= */
+
+.person-image:hover img {
+  transform: scale(1.1);
+}
+
+.person-image:hover .person-text {
+  transform: translateY(0);
+}
+
+.person-image:hover h3::after {
+  width: 100%;
+}
+
+.person-image:hover .person-description {
+  max-height: 150px;
+
+  opacity: 1;
+}
+
+.person-image:hover button {
+  background: white;
+
+  color: #111;
+}
