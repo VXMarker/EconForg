@@ -75,6 +75,9 @@
 .hero-content span:hover {
   transform: scale(1.02);
 }
+.hero-content span:active {
+  transform: scale(0.96);
+}
 .hero-content span::after {
   content: "";
   position: absolute;
@@ -112,6 +115,9 @@
 
 .hero-content p:hover {
   transform: scale(1.02);
+}
+.hero-content p:active {
+  transform: scale(0.98);
 }
 
 .hero-content button {

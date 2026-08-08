@@ -2,20 +2,6 @@
 /* EQUIPO */
 /* ================= */
 
-.team {
-  margin-top: 100px;
-
-  padding: 0 8%;
-}
-
-.team h2 {
-  text-align: center;
-
-  font-size: 40px;
-
-  margin-bottom: 50px;
-}
-
 /* CONTENEDOR DE CARDS */
 
 .team-container {
@@ -23,15 +9,15 @@
 
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 45px;
-
-  align-items: center;
+  gap: 35px;
 }
 
 /* CARD */
 
 .person-card {
   width: 100%;
+  cursor: pointer;
+  transition: transform 0.25s ease;
 }
 
 /* IMAGEN */
@@ -39,7 +25,7 @@
 .person-image {
   position: relative;
 
-  height: 520px;
+  height: 480px;
 
   overflow: hidden;
 
@@ -85,7 +71,7 @@
 */
 
 .person-text {
-  transform: translateY(80px);
+  transform: translateY(20px);
 
   transition: 0.5s ease;
 }
@@ -97,11 +83,12 @@
 
   font-size: 30px;
 
-  font-family: Georgia, serif;
-
   margin-bottom: 20px;
 
   position: relative;
+}
+
+.person-info:hover {
 }
 
 /* LINEA ANIMADA */
@@ -188,8 +175,19 @@
   opacity: 1;
 }
 
-.person-image:hover button {
+.person-image button:hover {
   background: white;
 
   color: #111;
+}
+
+/* ACTIVE */
+
+.person-card:active {
+  transform: scale(0.98);
+}
+.person-card:active button {
+  background-color: white;
+  color: #111;
+  transform: translateY(2px);
 }
