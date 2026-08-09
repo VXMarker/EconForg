@@ -1,12 +1,20 @@
+/* ================= */
 /* HERO */
+/* ================= */
 
 .hero {
   position: relative;
+
   width: 100%;
+
   height: 650px;
+
   overflow: hidden;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 }
 
@@ -14,21 +22,25 @@
 
 .hero-image {
   position: absolute;
-  width: 100%;
-  height: 100%;
+
+  inset: 0;
 }
 
 .hero-image img {
   width: 100%;
+
   height: 100%;
+
   object-fit: cover;
 }
 
-/* OSCURECER IMAGEN */
+/* OVERLAY */
 
 .hero-overlay {
   position: absolute;
+
   inset: 0;
+
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65));
 }
 
@@ -41,58 +53,25 @@
 
   max-width: 900px;
 
+  padding: 20px;
+
   text-align: center;
 
-  color: white;
+  color: var(--color-text-primary);
+}
 
-  padding: 20px;
+.hero-content span {
+  margin-inline: auto;
 }
 
 .hero-content h1 {
   font-size: clamp(35px, 5vw, 65px);
+
   line-height: 1.1;
+
   margin-bottom: 25px;
+
   font-weight: 800;
-  user-select: none;
-  cursor: pointer;
-}
-
-/* Subrayado */
-
-.hero-content span {
-  display: block;
-
-  position: relative;
-
-  width: max-content;
-
-  margin-inline: auto;
-
-  transition: transform 0.25s ease;
-
-  will-change: transform;
-}
-.hero-content span:hover {
-  transform: scale(1.02);
-}
-.hero-content span:active {
-  transform: scale(0.96);
-}
-.hero-content span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 0;
-  height: 2px;
-  background: white;
-}
-
-.hero-content span::after {
-  transition: width 0.4s ease;
-}
-.hero-content span:hover::after {
-  width: 100%;
 }
 
 .hero-content p {
@@ -103,45 +82,20 @@
   max-width: 750px;
 
   margin: auto;
-
-  opacity: 0.9;
-
-  transition: transform 0.25s ease;
-
-  will-change: transform;
-
-  cursor: pointer;
 }
 
-.hero-content p:hover {
-  transform: scale(1.02);
-}
-.hero-content p:active {
-  transform: scale(0.98);
-}
-
-.hero-content button {
+.hero-button {
   margin-top: 35px;
 
   padding: 15px 35px;
-
-  border: none;
 
   border-radius: 30px;
 
   font-size: 17px;
 
   font-weight: 700;
-  cursor: pointer;
-  background: white;
-  color: #111;
-  transition: 0.3s;
-  user-select: none;
-}
 
-.hero-content button:hover {
-  transform: translateY(-5px);
-}
-.hero-content button:active {
-  transform: translateY(2px) scale(0.96);
+  background: white;
+
+  color: #111;
 }

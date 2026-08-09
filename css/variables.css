@@ -1,17 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
+  /* COLORES */
+
   --main-font: "Outfit", sans-serif;
 
   --main-page-color: #131313;
 
   --main-letter-color: #bbbbbb;
 
+  --main-title-color: #ffffff;
+
+  --main-hover-color: #ffffff;
+
   --main-border-color: rgb(73, 70, 70);
+
+  /* COLORES DE MARCA */
 
   --main-color-blue: rgb(16, 101, 150);
 
   --main-color-red: rgb(207, 10, 10);
 
   --main-color-yellow: rgb(204, 207, 10);
+
+  /* TAMAÑOS */
+
+  --title-font-size: 45px;
+
+  --subtitle-font-size: 22px;
+
+  --text-font-size: 18px;
+
+  /* EFECTOS */
+
+  --transition-fast: 0.25s ease;
+
+  --transition-normal: 0.5s ease;
+
+  /* ESPACIADOS */
+
+  --section-padding: 90px 8%;
+}
+
+/* ================= */
+/* ESTRUCTURA GENERAL */
+/* ================= */
+
+.section {
+  padding: var(--section-padding);
+}
+
+/* ================= */
+/* BOTONES */
+/* ================= */
+
+.btn-primary {
+  display: inline-block;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+
+  background: var(--color-hover-background);
+}
+
+.btn-primary:active {
+  transform: translateY(2px) scale(0.96);
+}
+
+/* ================= */
+/* TEXTOS */
+/* ================= */
+
+.text-description {
+  opacity: 0.9;
+
+  cursor: pointer;
+
+  transition: transform var(--transition-fast);
+}
+
+.text-description:hover {
+  transform: scale(1.02);
+
+  color: var(--main-color-red);
+}
+
+.text-description:active {
+  transform: scale(0.98);
+}
+
+/* ================= */
+/* TITULOS */
+/* ================= */
+
+.text-title {
+  cursor: pointer;
+
+  user-select: none;
+
+  transition:
+    transform var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.text-title:hover {
+  transform: scale(1.02);
+
+  color: var(--main-color-yellow);
+}
+
+.text-title:active {
+  transform: scale(0.96);
+}
+
+/* ================= */
+/* SUBRAYADO ANIMADO */
+/* ================= */
+
+.effect-underline {
+  display: block;
+
+  position: relative;
+
+  width: max-content;
+}
+
+.effect-underline::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -8px;
+
+  width: 0;
+
+  height: 3px;
+
+  background: var(--main-hover-color);
+
+  transition: width var(--transition-normal);
+}
+
+.effect-underline:hover::after {
+  width: 100%;
 }

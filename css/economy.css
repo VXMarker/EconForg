@@ -1,0 +1,159 @@
+/* ========================= */
+/* ECONOMY */
+/* ========================= */
+
+.economy-intro {
+  background: var(--main-page-color);
+}
+
+/* HEADER */
+
+.economy-header {
+  max-width: 850px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+.economy-header h2 {
+  margin-bottom: 20px;
+  margin-inline: auto;
+  font-size: var(--title-font-size);
+}
+
+.economy-header p {
+  max-width: 800px;
+
+  margin: auto;
+}
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+.economy-features {
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 45px 80px;
+}
+
+.economy-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 15px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition: var(--transition-fast);
+}
+
+.economy-feature:hover {
+  transform: translateY(-5px);
+}
+
+.economy-feature:hover .feature-content h3::after {
+  width: 100%;
+}
+
+/* ICONO */
+
+.feature-icon {
+  min-width: 55px;
+
+  height: 55px;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--main-title-color);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  transition: var(--transition-fast);
+}
+
+.feature-icon i {
+  color: white;
+
+  transition: var(--transition-fast);
+}
+
+.economy-feature:hover .feature-icon {
+  background: white;
+}
+
+.economy-feature:hover .feature-icon i {
+  color: #111;
+}
+
+/* TEXTO */
+
+.feature-content h3 {
+  color: var(--main-title-color);
+
+  font-size: var(--subtitle-font-size);
+
+  margin-bottom: 10px;
+}
+
+.feature-content p {
+  color: var(--main-letter-color);
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* CONTENIDO EXTRA */
+/* ========================= */
+
+.economy-extra {
+  margin-top: 80px;
+
+  min-height: 250px;
+
+  border-radius: 20px;
+
+  border: 1px solid var(--main-border-color);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 40px;
+}
+
+.economy-extra h3 {
+  color: var(--main-title-color);
+
+  font-size: 30px;
+
+  margin-bottom: 15px;
+}
+
+.economy-extra p {
+  max-width: 600px;
+
+  line-height: 1.6;
+}

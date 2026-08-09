@@ -16,6 +16,10 @@
   user-select: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--main-font);
   background: var(--main-page-color);

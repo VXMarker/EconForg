@@ -3,7 +3,7 @@
 /* ================= */
 
 .about {
-  padding: 90px 8%;
+  padding: 80px 8%;
 }
 
 .about-container {
@@ -27,45 +27,7 @@
 
   margin-bottom: 25px;
 
-  position: relative;
-
-  transition: transform 0.25s ease;
-
-  will-change: transform;
-
-  cursor: pointer;
-}
-
-.about-content h2:hover {
-  transform: scale(1.02);
-
-  color: white;
-}
-
-.about-content h2:active {
-  transform: scale(0.98);
-}
-
-.about-content h2::after {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-
-  bottom: -8px;
-
-  width: 0;
-
-  height: 2px;
-
-  background: white;
-
-  transition: width 0.4s ease;
-}
-
-.about-content h2:hover::after {
-  width: 70%;
+  margin-inline: 0px;
 }
 
 .about-content p {
@@ -74,20 +36,6 @@
   line-height: 1.7;
 
   margin-bottom: 20px;
-
-  transition: transform 0.25s ease;
-
-  cursor: pointer;
-}
-
-.about-content p:hover {
-  color: white;
-
-  transform: scale(1.02);
-}
-
-.about-content p:active {
-  transform: scale(0.98);
 }
 
 /* ================= */

@@ -198,3 +198,29 @@
     gap: 30px;
   }
 }
+
+/* ================= */
+/* ECONOMY */
+/* ================= */
+
+.economy-header h2 {
+  font-size: 35px;
+}
+
+.economy-features {
+  grid-template-columns: 1fr;
+
+  gap: 35px;
+}
+
+.economy-feature {
+  gap: 20px;
+}
+
+.feature-content h3 {
+  font-size: 20px;
+}
+
+.economy-extra {
+  margin-top: 50px;
+}
