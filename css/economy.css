@@ -4,6 +4,8 @@
 
 .economy-intro {
   background: var(--main-page-color);
+  display: block;
+  align-items: center;
 }
 
 /* HEADER */
@@ -33,13 +35,13 @@
 /* ========================= */
 
 .economy-features {
-  margin-top: 50px;
+  margin-top: 35px;
 
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 45px 80px;
+  gap: 35px 60px;
 }
 
 .economy-feature {
@@ -49,26 +51,20 @@
 
   gap: 25px;
 
-  padding: 15px;
-
-  border-radius: 20px;
+  padding: 25px;
 
   cursor: pointer;
 
   transition: var(--transition-fast);
+
+  border: 3px solid var(--main-page-color);
+  border-radius: 20px;
 }
 
-.economy-feature:hover {
-  transform: translateY(-5px);
-}
+/* ICONOS */
 
-.economy-feature:hover .feature-content h3::after {
-  width: 100%;
-}
-
-/* ICONO */
-
-.feature-icon {
+.feature-icon,
+.econ-btn {
   min-width: 55px;
 
   height: 55px;
@@ -86,25 +82,15 @@
   transition: var(--transition-fast);
 }
 
-.feature-icon i {
+.feature-icon .icon,
+.econ-btn .icon {
   color: white;
-
   transition: var(--transition-fast);
-}
-
-.economy-feature:hover .feature-icon {
-  background: white;
-}
-
-.economy-feature:hover .feature-icon i {
-  color: #111;
 }
 
 /* TEXTO */
 
 .feature-content h3 {
-  color: var(--main-title-color);
-
   font-size: var(--subtitle-font-size);
 
   margin-bottom: 10px;
@@ -156,4 +142,46 @@
   max-width: 600px;
 
   line-height: 1.6;
+}
+
+.nav-contain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hover */
+.economy-feature:hover {
+  transform: translate(5px, -5px);
+  border-color: var(--main-hover-color);
+}
+.economy-feature:hover .feature-content h3 {
+  color: var(--main-hover-color);
+}
+
+.economy-feature:hover .feature-content h3::after {
+  width: 100%;
+}
+
+.economy-feature:hover .feature-icon .icon {
+  color: var(--letter-color-active);
+}
+.economy-feature:hover .feature-icon,
+.econ-btn:hover {
+  background: var(--main-hover-color);
+  border-color: var(--main-hover-color);
+}
+
+.economy-feature:hover .feature-icon i,
+.econ-btn:hover .icon {
+  color: #111;
+}
+
+.economy-feature:hover .feature-content p {
+  color: var(--main-hover-color);
+}
+/* Active */
+.economy-feature:active {
+  transform: translate(-3px, 3px);
 }

@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" href="css/reset.css" />
 
-    <link rel="stylesheet" href="css/variables.css" />
-
     <link rel="stylesheet" href="css/navbar.css" />
 
     <link rel="stylesheet" href="css/hero.css" />
@@ -25,6 +23,10 @@
     <link rel="stylesheet" href="css/responsive.css" />
 
     <link rel="stylesheet" href="css/economy.css" />
+
+    <link rel="stylesheet" href="css/search.css" />
+
+    <link rel="stylesheet" href="css/variables.css" />
 
     <script type="module" src="/js/main.js"></script>
 
@@ -58,11 +60,11 @@
           </li>
 
           <li>
-            <a href="#programs"> Programas </a>
+            <a href="#blog"> Blog </a>
           </li>
 
           <li>
-            <a href="#"> Blog </a>
+            <a href="#programas"> Programas </a>
           </li>
         </ul>
 
@@ -99,13 +101,13 @@
             </span>
           </h1>
 
-          <p class="text-description">
+          <p class="text-description text-description-active">
             En EconForg analizamos tendencias, datos y oportunidades para
             transformar la información económica en decisiones estratégicas que
             impulsan el crecimiento.
           </p>
 
-          <a href="#economy" class="hero-button btn-primary"> Conocer más </a>
+          <a href="#" class="hero-button btn-primary"> Conocer más </a>
         </div>
       </section>
 
@@ -124,11 +126,11 @@
         <div class="economy-features">
           <article class="economy-feature">
             <div class="feature-icon">
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-check icon"></i>
             </div>
 
             <div class="feature-content">
-              <h3 class="effect-underline">Gestión de recursos</h3>
+              <h3 class="effect-underline-card">Gestión de recursos</h3>
 
               <p>
                 Permite comprender cómo distribuir y utilizar los recursos
@@ -139,11 +141,11 @@
 
           <article class="economy-feature">
             <div class="feature-icon">
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-check icon"></i>
             </div>
 
             <div class="feature-content">
-              <h3 class="effect-underline">Toma de decisiones</h3>
+              <h3 class="effect-underline-card">Toma de decisiones</h3>
 
               <p>
                 Ayuda a analizar alternativas y elegir mejores opciones frente a
@@ -154,11 +156,11 @@
 
           <article class="economy-feature">
             <div class="feature-icon">
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-check icon"></i>
             </div>
 
             <div class="feature-content">
-              <h3 class="effect-underline">Análisis del mercado</h3>
+              <h3 class="effect-underline-card">Análisis del mercado</h3>
 
               <p>
                 Estudia el comportamiento de consumidores, empresas y mercados.
@@ -168,11 +170,11 @@
 
           <article class="economy-feature">
             <div class="feature-icon">
-              <i class="fa-solid fa-check"></i>
+              <i class="fa-solid fa-check icon"></i>
             </div>
 
             <div class="feature-content">
-              <h3 class="effect-underline">Desarrollo y crecimiento</h3>
+              <h3 class="effect-underline-card">Desarrollo y crecimiento</h3>
 
               <p>
                 Permite crear estrategias que impulsen el crecimiento económico.
@@ -181,7 +183,13 @@
           </article>
         </div>
 
-        <div class="economy-extra">
+        <!-- <div class="nav-contain">
+          <a href="#extra" class="econ-btn btn-primary">
+            <i class="fa-solid fa-arrow-down-long icon"></i>
+          </a>
+        </div> -->
+
+        <div class="economy-extra" id="extra">
           <h3>Más sobre economía</h3>
 
           <p>
@@ -197,20 +205,21 @@
 
         <div class="about-container">
           <div class="about-content">
+            <h2 class="text-title effect-underline">Sobre nosotros</h2>
+
             <div>
-              <h2 class="title-text">Sobre nosotros</h2>
+              <p class="text-description">
+                En EconForg creemos que la economía es una herramienta
+                fundamental para comprender el mundo y construir mejores
+                decisiones.
+              </p>
+
+              <p class="text-description">
+                Somos una plataforma enfocada en análisis económico, educación
+                financiera y generación de conocimiento, combinando datos,
+                tecnología y pensamiento estratégico.
+              </p>
             </div>
-
-            <p class="descriptive-text">
-              En EconForg creemos que la economía es una herramienta fundamental
-              para comprender el mundo y construir mejores decisiones.
-            </p>
-
-            <p class="descriptive-text">
-              Somos una plataforma enfocada en análisis económico, educación
-              financiera y generación de conocimiento, combinando datos,
-              tecnología y pensamiento estratégico.
-            </p>
           </div>
 
           <!-- CARRUSEL -->
@@ -304,7 +313,7 @@
         </div>
       </section>
       <!-- Programas -->
-      <section class="programs" id="programs">
+      <section class="programs" id="blog">
         <div class="programs-header">
           <h2>Programas</h2>
 
@@ -402,86 +411,97 @@
 
       <!-- WHY US -->
 
-      <section class="why-us">
-        <h2>¿Por qué elegirnos?</h2>
+      <section class="section search-section" id="programas">
+        <!-- HEADER -->
 
-        <div class="why-container">
-          <div>
-            <h3>Calidad</h3>
+        <div class="search-header">
+          <h2 class="text-title effect-underline">Buscador EconForg</h2>
 
-            <p>Soluciones confiables.</p>
-          </div>
+          <p class="text-description">
+            Encuentra contenido académico, recursos económicos, programas y
+            materiales organizados por categorías y periodos trimestrales.
+          </p>
+        </div>
 
-          <div>
-            <h3>Innovación</h3>
+        <!-- BUSCADOR -->
 
-            <p>Tecnología moderna.</p>
-          </div>
+        <div class="search-container">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Buscar contenido..."
+          />
 
-          <div>
-            <h3>Seguridad</h3>
+          <!-- FILTROS RAPIDOS -->
 
-            <p>Procesos seguros.</p>
-          </div>
+          <div class="search-filters">
+            <button class="filter-button active">ALL</button>
 
-          <div>
-            <h3>Soporte</h3>
+            <button class="filter-button">CB</button>
 
-            <p>Atención personalizada.</p>
+            <button class="filter-button">TRI3-TRI5</button>
+
+            <button class="filter-button">TRI5-7</button>
+
+            <button class="filter-button">TRI7-9</button>
           </div>
         </div>
-      </section>
 
-      <!-- REVIEWS -->
+        <!-- RESULTADOS -->
 
-      <section class="reviews">
-        <h2>Opiniones</h2>
+        <div class="search-results">
+          <!-- CARD EJEMPLO -->
 
-        <div class="review-container">
-          <div class="review-card">
-            <p>"Excelente servicio"</p>
+          <article class="search-card">
+            <img src="/img/img1.webp" alt="contenido" />
 
-            <span> Usuario </span>
-          </div>
+            <h3>Introducción a la economía</h3>
 
-          <div class="review-card">
-            <p>"Muy recomendable"</p>
+            <div class="card-tags">
+              <span class="tag"> CB </span>
 
-            <span> Usuario </span>
-          </div>
+              <span class="tag"> TRI3 </span>
 
-          <div class="review-card">
-            <p>"Gran experiencia"</p>
+              <span class="tag"> Economía </span>
+            </div>
+          </article>
 
-            <span> Usuario </span>
-          </div>
+          <article class="search-card">
+            <img src="/img/img1.webp" alt="contenido" />
+
+            <h3>Análisis financiero</h3>
+
+            <div class="card-tags">
+              <span class="tag"> TRI5 </span>
+
+              <span class="tag"> Finanzas </span>
+            </div>
+          </article>
+
+          <article class="search-card">
+            <img src="/img/img1.webp" alt="contenido" />
+
+            <h3>Mercado y producción</h3>
+
+            <div class="card-tags">
+              <span class="tag"> TRI7 </span>
+
+              <span class="tag"> Economía </span>
+
+              <span class="tag"> CB </span>
+            </div>
+          </article>
+
+          <article class="search-card">
+            <img src="/img/img1.webp" alt="contenido" />
+
+            <h3>Política económica</h3>
+
+            <div class="card-tags">
+              <span class="tag"> TRI9 </span>
+            </div>
+          </article>
         </div>
-      </section>
-
-      <!-- FAQ -->
-
-      <section class="faq">
-        <h2>Preguntas frecuentes</h2>
-
-        <div class="faq-list">
-          <div>Pregunta 1</div>
-
-          <div>Pregunta 2</div>
-
-          <div>Pregunta 3</div>
-
-          <div>Pregunta 4</div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-
-      <section class="cta">
-        <h2>Empieza ahora</h2>
-
-        <p>Forma parte de nuestra plataforma.</p>
-
-        <button>Comenzar</button>
       </section>
     </main>
 
@@ -510,5 +530,6 @@
         <p>Facebook</p>
       </div>
     </footer>
+    <script src="js/styles_text.js"></script>
   </body>
 </html>

@@ -56,8 +56,6 @@
   padding: 20px;
 
   text-align: center;
-
-  color: var(--color-text-primary);
 }
 
 .hero-content span {
@@ -97,5 +95,5 @@
 
   background: white;
 
-  color: #111;
+  color: black;
 }

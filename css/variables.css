@@ -11,7 +11,9 @@
 
   --main-title-color: #ffffff;
 
-  --main-hover-color: #ffffff;
+  --main-hover-color: rgb(86, 10, 207);
+
+  --letter-color-active: #fff;
 
   --main-border-color: rgb(73, 70, 70);
 
@@ -23,9 +25,11 @@
 
   --main-color-yellow: rgb(204, 207, 10);
 
+  --main-color-purple: rgb(86, 10, 207);
+
   /* TAMAÑOS */
 
-  --title-font-size: 45px;
+  --title-font-size: 55px;
 
   --subtitle-font-size: 22px;
 
@@ -39,7 +43,7 @@
 
   /* ESPACIADOS */
 
-  --section-padding: 90px 8%;
+  --section-padding: 100px 8%;
 }
 
 /* ================= */
@@ -68,8 +72,8 @@
 
 .btn-primary:hover {
   transform: translateY(-5px);
-
-  background: var(--color-hover-background);
+  background: rgb(43, 41, 41);
+  color: white;
 }
 
 .btn-primary:active {
@@ -86,12 +90,14 @@
   cursor: pointer;
 
   transition: transform var(--transition-fast);
+
+  font-size: var(--text-font-size);
 }
 
 .text-description:hover {
   transform: scale(1.02);
 
-  color: var(--main-color-red);
+  color: var(--main-hover-color);
 }
 
 .text-description:active {
@@ -109,24 +115,27 @@
 
   transition:
     transform var(--transition-fast),
-    color var(--transition-fast);
+    color var(--transition-fast),
+    font-weight 0.5s ease;
 }
 
 .text-title:hover {
   transform: scale(1.02);
 
-  color: var(--main-color-yellow);
+  color: var(--main-hover-color);
 }
 
 .text-title:active {
   transform: scale(0.96);
+  color: var(--main-hover-color);
 }
 
 /* ================= */
 /* SUBRAYADO ANIMADO */
 /* ================= */
 
-.effect-underline {
+.effect-underline,
+.effect-underline-card {
   display: block;
 
   position: relative;
@@ -134,7 +143,8 @@
   width: max-content;
 }
 
-.effect-underline::after {
+.effect-underline::after,
+.effect-underline-card::after {
   content: "";
 
   position: absolute;
@@ -154,4 +164,44 @@
 
 .effect-underline:hover::after {
   width: 100%;
+  background-color: var(--main-hover-color);
+}
+
+.effect-underline:active::after {
+  background-color: var(--main-hover-color);
+}
+
+/* Styles con js */
+
+.effect-underline-active::after,
+.effect-underline-card-active::after {
+  width: 100%;
+  background-color: var(--letter-color-active);
+}
+
+.effect-underline-active,
+.effect-underline-card-active {
+  color: var(--letter-color-active);
+}
+
+.text-description-active {
+  color: var(--letter-color-active);
+  transform: scale(1.04);
+  /* font-weight: 600; */
+}
+/* Economy styles js */
+
+.economy-feature-active {
+  border-color: var(--letter-color-active);
+}
+.economy-feature-active .feature-icon {
+  background-color: var(--letter-color-active);
+  border-color: var(--letter-color-active);
+}
+.economy-feature-active .feature-icon .icon {
+  color: var(--main-page-color);
+  height: 1.5em;
+}
+.economy-feature-active .feature-content p {
+  color: var(--letter-color-active);
 }

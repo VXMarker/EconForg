@@ -3,7 +3,7 @@
 /* ================= */
 
 .about {
-  padding: 80px 8%;
+  padding: var(--section-padding);
 }
 
 .about-container {
@@ -11,7 +11,7 @@
 
   justify-content: space-between;
 
-  align-items: center;
+  /* align-items: center; */
 
   gap: 60px;
 
@@ -23,20 +23,29 @@
 }
 
 .about-content h2 {
-  font-size: 45px;
+  font-size: var(--title-font-size);
 
   margin-bottom: 25px;
+}
 
-  margin-inline: 0px;
+.about-content div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .about-content p {
-  font-size: 18px;
+  line-height: 1.8;
 
-  line-height: 1.7;
+  /* max-width: 750px; */
 
-  margin-bottom: 20px;
+  text-align: justify;
+  margin: auto;
 }
+
+/* Los parrafos usan directamente:
+.text-description
+*/
 
 /* ================= */
 /* CARRUSEL */
@@ -57,7 +66,7 @@
 
   border-radius: 20px;
 
-  transition: transform 0.25s ease;
+  transition: transform var(--transition-fast);
 
   will-change: transform;
 }
@@ -92,7 +101,7 @@
   will-change: transform;
 }
 
-/* CAPA OSCURA FIJA */
+/* CAPA OSCURA */
 
 .carousel-image::before {
   content: "";
@@ -103,11 +112,7 @@
 
   z-index: 1;
 
-  background: linear-gradient(
-    transparent 40%,
-
-    rgba(0, 0, 0, 0.85)
-  );
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.85));
 
   pointer-events: none;
 }
@@ -127,15 +132,15 @@
 
   padding: 25px;
 
-  color: white;
+  color: var(--main-title-color);
 
-  font-size: 18px;
+  font-size: var(--text-font-size);
 
   font-weight: 600;
 
   transition:
-    transform 0.35s ease,
-    font-size 0.35s ease;
+    transform var(--transition-fast),
+    font-size var(--transition-fast);
 }
 
 /* ================= */
@@ -151,7 +156,7 @@
 }
 
 /* ================= */
-/* CLICK ZOOM */
+/* CLICK */
 /* ================= */
 
 .carousel.zoom {
